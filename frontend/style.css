@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif; 
-    background-color: #292a2d; 
+    background-color: #121313; 
     margin: 0;
     padding: 20px;
     min-height: 100vh;
@@ -55,7 +55,7 @@ main {
 }
 
 .news-item {
-    background: #212327;
+    background: #121313;
     border: 2px solid #ed145b; 
     border-radius: 10px; 
     padding: 20px;
