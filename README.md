@@ -1,176 +1,101 @@
-# Fiap News - Solução para o Hackathon FIAP
+# Fiap News
 
-## 1. Resumo do Projeto
+## Descrição
+Fiap News é um site inovador de notícias tecnológicas, desenvolvido para atender ao aporte recebido pela empresa Fiap News. O projeto inclui um frontend responsivo, uma API em Node.js que integra-se a um banco de dados SQLite para gerenciar e retornar dinamicamente conteúdos de notícias. O site permite visualizar uma lista de notícias, acessar detalhes específicos, e navegar intuitivamente, atendendo às exigências de inovação, usabilidade, e impacto no setor tecnológico.
 
-O **Fiap News** é uma aplicação web desenvolvida para o hackathon da FIAP, focada em notícias de tecnologia. O projeto inclui:
-- **Frontend interativo**
-- **API em Node.js** para gerenciamento de dados
-- **Banco de dados SQLite** para armazenamento persistente
+## Por que atende ao escopo do Hackathon
+O projeto "Fiap News" cumpre integralmente os requisitos do hackathon:
+- **SITE com apresentação de notícias:** O frontend exibe uma grade de 8 notícias tecnológicas em 2 colunas, com links para acessar páginas detalhadas (ex.: "Carro voador").
+- **API desenvolvida em Node.js:** O backend utiliza Node.js com o framework Express para criar uma API que retorna dados das notícias via endpoint (`/api/news`), acessível em `http://localhost:5000/api/news`.
+- **Acesso ao banco de dados:** A API interage com um banco de dados SQLite (`news.db`) para armazenar, recuperar, e gerenciar as notícias, garantindo persistência e dinamismo.
+- **Projeto no GitHub:** O código está hospedado no GitHub (substitua `<url_do_repositório>` pelo link real do seu repositório).
 
-O design é minimalista, com as cores da FIAP (**#ed145b** e **#FBFFFF**), organizado em uma **grade de 2 colunas** com animações sutis e interatividade.
+## Vídeo de Apresentação
+Insira aqui o link ou informações do vídeo de apresentação da solução, demonstrando o funcionamento do site, a interação com a API, o acesso ao banco de dados, e o impacto no setor tecnológico. Exemplo: [Vídeo no YouTube](https://www.youtube.com/watch?v=exemplo)
 
----
+## Pré-requisitos
+- Node.js (versão 14 ou superior)
+- npm (gerenciador de pacotes do Node.js, instalado com Node.js)
+- Um editor de código (como Visual Studio Code)
+- Navegador web (Chrome, Firefox, Edge, etc.)
+- Sistema operacional: Windows, macOS, ou Linux
 
-## 2. Objetivo
+## Como Usar o Projeto
+### Instalação
+1. Clone o repositório do GitHub para um diretório local:
 
-### **Problema abordado**
-Criar um site de notícias tecnológicas acessível, funcional e escalável para a **Fiap News**.
+```bash
+   git clone <https://github.com/mrmessias/fiap-news.git> fiap-news
+```
 
-### **Solução proposta**
-Um site responsivo utilizando **HTML, CSS e JavaScript**, conectado a uma **API RESTful** em **Node.js/Express** com **SQLite** para persistência.
+Ou extraia o arquivo ZIP em `fiap-news`.
 
-### **Impacto esperado**
-Facilitar o acesso a informações tecnológicas com um design moderno e funcional, promovendo **inovação e educação** na comunidade FIAP.
+2. Navegue até o diretório `backend`:
 
----
+```bash
+   cd fiap-news/backend
+```
 
-## 3. Requisitos Atendidos
+3. Instale as dependências do backend:
 
-✅ **Site responsivo com apresentação de notícias** (8 notícias em uma grade de 2 colunas).  
-✅ **API RESTful** em `http://localhost:5000/api/news`, retornando dados em **JSON**.  
-✅ **Banco de dados SQLite** (`news.db`) para armazenamento persistente.
+```bash
+   npm install
+```
 
----
+4. Certifique-se de que o arquivo `news.db` existe no diretório `backend`. Se não existir, o servidor criará automaticamente ao iniciar.
 
-## 4. Tecnologias Utilizadas
+### Configuração
+- Não é necessário configurar variáveis de ambiente ou arquivos adicionais. O projeto utiliza `news.db` como banco de dados SQLite, gerado automaticamente pelo `server.js`.
 
-- **Backend:** Node.js, Express, SQLite3  
-- **Frontend:** HTML5, CSS3, JavaScript  
-- **Ferramentas:** Git, GitHub, GitHub Desktop  
+### Execução
+1. Abra um terminal na pasta `backend` e inicie o servidor:
 
----
+   node server.js
 
-## 5. Estrutura do Projeto
+- Você verá a mensagem: `Servidor rodando em http://localhost:5000`.
+
+2. Abra outro terminal (ou use o mesmo, se preferir) e navegue até a pasta `frontend`:
+
+```bash
+   cd fiap-news/frontend
+```
+
+3. Inicie o Live Server no VS Code para o frontend:
+- No VS Code, clique com o botão direito em `index.html` e selecione "Open with Live Server".
+- O navegador abrirá automaticamente `http://localhost:5500` (ou outra porta configurada pelo Live Server).
+
+4. Acesse a página principal em `http://localhost:5500` para visualizar as notícias.
+
+### Interação com o Site
+- Na página principal (`index.html`), visualize a lista de 8 notícias tecnológicas em uma grade de 2 colunas.
+- Clique no botão "+" de qualquer notícia para ser redirecionado à página de detalhes correspondente (ex.: "Carro voador" leva para `carro-voador.html`).
+- Na página de detalhes, leia o título, data, e conteúdo da notícia, e use o botão "⟵" para voltar à página principal.
+- O site é responsivo, funcionando em desktops, tablets, e smartphones.
+
+## Estrutura do Projeto
 
 ```bash
 fiap-news/
 ├── backend/
-│   ├── server.js
-│   └── news.db
-└── frontend/
-    ├── index.html
-    ├── style.css
-    └── script.js
+│   ├── news.db
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   ├── carro-voador.html
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── .gitattributes
+└── README.md
 ```
 
----
+## Contribuição
+- Este projeto é open-source. Para contribuir, faça um fork do repositório, crie uma branch, e envie um pull request com suas alterações.
+- Reporte bugs ou sugera melhorias abrindo issues no repositório.
 
-## 6. Funcionalidades
+## Licença
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` (se aplicável) para mais detalhes.
 
-- 📌 **Exibição de 8 notícias** em uma **grade responsiva** (2 colunas).
-- 🖱️ **Interatividade**: Contorno branco nos títulos ao passar o mouse.
-- 🔄 **Backend persistente** que armazena e retorna dados via API (`/api/news`).
-
----
-
-## 7. Instalação e Configuração
-
-### **Pré-requisitos**
-- [Node.js](https://nodejs.org/) (versão 14.x ou superior)
-- [Git](https://git-scm.com/)
-- Navegador web moderno (Chrome, Firefox, Edge, etc.)
-
-### **Passos**
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/fiap-news.git
-   cd fiap-news
-   ```
-
-2. **Instale as dependências do backend**:
-   ```bash
-   cd backend
-   npm init -y
-   npm install express sqlite3
-   ```
-
-3. **Inicie o servidor backend**:
-   ```bash
-   node server.js
-   ```
-
-4. **Abra o frontend**:
-   - Navegue até a pasta `frontend` e abra `index.html` em um navegador.
-   - Ou use um servidor local (ex: Live Server no VS Code).
-
----
-
-## 8. Uso
-
-🔹 **Backend** rodando em `http://localhost:5000`.  
-🔹 **Frontend** carrega as notícias via API (`/api/news`).  
-🔹 **Efeitos visuais** ao passar o mouse sobre os títulos.  
-🔹 **Layout responsivo**, adaptando-se a telas menores.
-
----
-
-## 9. Entrega no GitHub
-
-📌 **Repositório do projeto**: [github.com/seu-usuario/fiap-news](https://github.com/seu-usuario/fiap-news)
-
-Inclui todos os arquivos necessários e está versionado com Git e GitHub Desktop.
-
----
-
-## 10. 🎥 Vídeo de Apresentação
-
-Um vídeo demonstrando a solução está disponível em:  
-📌 `video-apresentacao.mp4`
-
-### O vídeo cobre:
-- ✅ Visão geral do projeto
-- ✅ Objetivos e funcionalidades
-- ✅ Demonstração do frontend/backend
-- ✅ Tecnologias utilizadas
-
----
-
-## 11. Contribuição
-
-Contribuições são bem-vindas! 🚀
-
-1. **Faça um fork do repositório**.
-2. **Crie uma branch**:
-   ```bash
-   git checkout -b feature/nova-funcionalidade
-   ```
-3. **Faça commits das suas alterações**:
-   ```bash
-   git commit -m "Adiciona nova funcionalidade"
-   ```
-4. **Envie para o repositório remoto**:
-   ```bash
-   git push origin feature/nova-funcionalidade
-   ```
-5. **Abra um Pull Request** no GitHub.
-
----
-
-## 12. Licença
-
-Este projeto está sob a licença **MIT**.
-
-### MIT License
-
-```
-Copyright (c) 2025
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+## Contato
+- Desenvolvedor: Grupo 5
