@@ -1,14 +1,14 @@
 # Fiap News
 
 ## Descrição
-Fiap News é um site inovador de notícias tecnológicas, desenvolvido para atender ao aporte recebido pela empresa Fiap News. O projeto inclui um frontend responsivo, uma API em Node.js que integra-se a um banco de dados SQLite para gerenciar e retornar dinamicamente conteúdos de notícias. O site permite visualizar uma lista de notícias, acessar detalhes específicos, e navegar intuitivamente, atendendo às exigências de inovação, usabilidade, e impacto no setor tecnológico.
+Fiap News é um site de notícias tecnológicas, desenvolvido para atender ao Hackathon solicitado pela empresa Fiap News. O projeto inclui um frontend responsivo, uma API em Node.js que integra-se a um banco de dados SQLite para gerenciar e retornar dinamicamente conteúdos de notícias. O site permite visualizar uma lista de notícias, acessar detalhes específicos, e navegar intuitivamente.
 
 ## Por que atende ao escopo do Hackathon
 O projeto "Fiap News" cumpre integralmente os requisitos do hackathon:
 - **SITE com apresentação de notícias:** O frontend exibe uma grade de 8 notícias tecnológicas em 2 colunas, com links para acessar páginas detalhadas (ex.: "Carro voador").
 - **API desenvolvida em Node.js:** O backend utiliza Node.js com o framework Express para criar uma API que retorna dados das notícias via endpoint (`/api/news`), acessível em `http://localhost:5000/api/news`.
 - **Acesso ao banco de dados:** A API interage com um banco de dados SQLite (`news.db`) para armazenar, recuperar, e gerenciar as notícias, garantindo persistência e dinamismo.
-- **Projeto no GitHub:** O código está hospedado no GitHub (substitua `<url_do_repositório>` pelo link real do seu repositório).
+- **Projeto no GitHub:** O código está hospedado no GitHub (`https://github.com/mrmessias/fiap-news.git`).
 
 ## Vídeo de Apresentação
 Insira aqui o link ou informações do vídeo de apresentação da solução, demonstrando o funcionamento do site, a interação com a API, o acesso ao banco de dados, e o impacto no setor tecnológico. Exemplo: [Vídeo no YouTube](https://www.youtube.com/watch?v=exemplo)
@@ -25,7 +25,7 @@ Insira aqui o link ou informações do vídeo de apresentação da solução, de
 1. Clone o repositório do GitHub para um diretório local:
 
 ```bash
-   git clone <https://github.com/mrmessias/fiap-news.git> fiap-news
+   git clone https://github.com/mrmessias/fiap-news.git fiap-news
 ```
 
 Ou extraia o arquivo ZIP em `fiap-news`.
