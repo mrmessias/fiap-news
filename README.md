@@ -1,7 +1,7 @@
 # Fiap News
 
 ## Descrição
-Fiap News é um site de notícias tecnológicas, desenvolvido para atender ao Hackathon solicitado pela empresa Fiap News. O projeto inclui um frontend responsivo, uma API em Node.js que integra-se a um banco de dados SQLite para gerenciar e retornar dinamicamente conteúdos de notícias. O site permite visualizar uma lista de notícias, acessar detalhes específicos, e navegar intuitivamente.
+Fiap News é um site de notícias tecnológicas, desenvolvido para atender ao Hackathon solicitado pela Faculdade FIAP. O projeto inclui um frontend responsivo, uma API em Node.js que integra-se a um banco de dados SQLite para gerenciar e retornar dinamicamente conteúdos de notícias. O site permite visualizar uma lista de notícias, acessar detalhes específicos, e navegar intuitivamente.
 
 ## Por que atende ao escopo do Hackathon
 O projeto "Fiap News" cumpre integralmente os requisitos do hackathon:

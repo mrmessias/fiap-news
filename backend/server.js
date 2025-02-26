@@ -44,7 +44,6 @@ db.serialize(() => {
             if (err) {
                 console.error('Erro ao verificar notícia:', err.message);
             } else if (!row) {
-                
                 db.run("INSERT INTO news (title, content, date) VALUES (?, ?, ?)", [news.title, news.content, news.date], (err) => {
                     if (err) {
                         console.error('Erro ao inserir notícia:', err.message);
@@ -68,8 +67,6 @@ app.get('/api/news', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
-
-
 
 process.on('SIGINT', () => {
     db.close((err) => {
