@@ -12,9 +12,7 @@ O projeto "Fiap News" cumpre integralmente os requisitos do hackathon:
 - **Projeto no GitHub:** O código está hospedado no GitHub: [Fiap News Repository](https://github.com/mrmessias/fiap-news.git).
 
 ## Vídeo de Apresentação
-Insira aqui o link ou informações do vídeo de apresentação da solução, demonstrando o funcionamento do site, a interação com a API, o acesso ao banco de dados e o impacto no setor tecnológico.
-
-Exemplo: [Vídeo no YouTube](https://www.youtube.com/watch?v=exemplo)
+[Fiap News: Plataforma de Notícias Tecnológicas com Node.js e SQLite | Hackathon FIAP](https://www.youtube.com/watch?v=z08LBuzBc3M)
 
 ## Pré-requisitos
 
